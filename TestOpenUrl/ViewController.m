@@ -16,14 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)openUrlAction:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"ms://www.baidu.com"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"ms://www.baidu.com"]];
 }
 
+- (IBAction)openUrlAction2:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"xxxx"]];
+    
+}
+
+- (IBAction)openUrlAction3:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"xxx"] options:nil completionHandler:nil];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"xxx"] options:nil completionHandler:nil];
+}
 
 @end
